@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No1 Temperature Converter</title>
+    <style>
+        h1{
+            color:aqua;
+            text-align: justify;
+        }
+        h2{
+            color:bisque;
+            text-align: justify;
+
+        }
+        body{
+            background-image:url('https://images.pexels.com/photos/281260/pexels-photo-281260.jpeg?cs=srgb&dl=pexels-francesco-ungaro-281260.jpg&fm=jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Temperature Converter</h1>
+    <h2><i>Put your values in any one field to convert between Temperature measurements </i></h2>
+    <p>
+    <input type="Celsius"id="inputCelsius"placeholder="Input in Celsius"oninput="temperatureConverter(this.value)"onoutput="temperatureConverter(this.value)">
+    </p>
+    <p>
+    <input type="Fahrenheit"id="inputFahrenheit"placeholder="Input in Fahrenheit"oninput="temperatureConverter1(this.value)"onoutput="temperatureConverter1(this.value)">
+    </p>
+    <p>
+        <input type="Kelvin"id="inputKelvin"placeholder="Input in Kelvin"oninput="temperatureConverter2(this.value)"onoutput="temperatureConverter2(this.value)">
+    </p>
+    
+     <h2>Get Your results Here</h2>
+    
+    
+    
+    <p>Celsius:<span id="outputCelsius"></span></p>   
+    <p>Fahrenheit:<span id="outputFahrenheit"></span></p>    
+    <p>Kelvin:<span id="outputKelvin"></span> </p>
+    
+
+    
+    
+</body>
+<script src="temp.js"></script>
+
+</html>
